@@ -11,14 +11,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="900.0" fitWidth="1440.0" layoutX="2.0" layoutY="-21.0" opacity="0.26" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@IMG/background.jpeg" />
+            <Image url="@bgimage1.jpg" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="189.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM" wrappingWidth="1230.623046875">
+      <Text fill="WHITE" layoutX="189.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGMENT SYSTEM" wrappingWidth="1230.623046875">
          <font>
             <Font name="Britannic Bold" size="78.0" />
          </font>
@@ -28,7 +28,7 @@
             <Font name="Times New Roman Italic" size="38.0" />
          </font>
       </Text>
-      <Pane layoutX="-6.0" layoutY="277.0" opacity="0.77" prefHeight="346.0" prefWidth="1446.0" style="-fx-background-color: grey;" styleClass="\@../../../main/java/project/application.css">
+      <Pane layoutX="-6.0" layoutY="277.0" opacity="0.77" prefHeight="346.0" prefWidth="1446.0" style="-fx-background-color: grey;">
          <children>
             <Line endX="150.0" layoutX="611.0" layoutY="178.0" rotate="90.0" startX="-150.0" stroke="#6b6868" />
          </children>
@@ -54,7 +54,7 @@
          </font>
       </Label>
       <TextField fx:id="n_id" layoutX="934.0" layoutY="331.0" prefHeight="47.0" prefWidth="289.0" />
-      <Button fx:id="n_login" layoutX="1275.0" layoutY="557.0" mnemonicParsing="false" onAction="#Home_screen" styleClass="button2" stylesheets="" text="LOGIN">
+      <Button fx:id="n_login" layoutX="1275.0" layoutY="557.0" mnemonicParsing="false" onAction="#n_home" styleClass="button2" stylesheets="@../../eclipse-workspace/HMS/src/application/application.css" text="LOGIN">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>

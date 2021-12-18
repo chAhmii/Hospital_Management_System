@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,11 +11,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ImageView fitHeight="900.0" fitWidth="1440.0" layoutX="2.0" layoutY="-21.0" opacity="0.26" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@IMG/background.jpeg" />
+            <Image url="@bgimage1.jpg" />
          </image>
       </ImageView>
       <Text fill="WHITE" layoutX="189.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGMENT SYSTEM" wrappingWidth="1230.623046875">
@@ -30,19 +28,20 @@
             <Font name="Times New Roman Italic" size="38.0" />
          </font>
       </Text>
-      <AnchorPane layoutX="507.0" layoutY="222.0" prefHeight="518.0" prefWidth="402.0" style="-fx-background-color: lightgrey; -fx-background-radius: 30;">
+      <AnchorPane layoutX="505.0" layoutY="234.0" prefHeight="518.0" prefWidth="402.0" style="-fx-background-color: lightgrey; -fx-background-radius: 30;">
          <children>
             <Text layoutX="135.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
                <font>
                   <Font name="Arial Bold" size="34.0" />
                </font>
             </Text>
-            <VBox layoutX="123.0" layoutY="87.0" prefHeight="239.0" prefWidth="260.0" spacing="18.0">
+            <VBox layoutX="123.0" layoutY="87.0" prefHeight="281.0" prefWidth="260.0" spacing="18.0">
                <children>
-                  <TextField fx:id="p_name" prefHeight="43.0" prefWidth="260.0" />
-                  <TextField fx:id="patient_age" prefHeight="43.0" prefWidth="260.0" />
-                  <TextField fx:id="patient_disease" prefHeight="43.0" prefWidth="260.0" />
-                  <TextField fx:id="patient_Address" prefHeight="43.0" prefWidth="260.0" />
+                  <TextField prefHeight="43.0" prefWidth="260.0" />
+                  <TextField prefHeight="43.0" prefWidth="260.0" />
+                  <TextField prefHeight="43.0" prefWidth="260.0" />
+                  <TextField prefHeight="43.0" prefWidth="260.0" />
+                  <ComboBox prefHeight="43.0" prefWidth="260.0" promptText="Gender" />
                </children>
             </VBox>
             <Label layoutX="17.0" layoutY="90.0" text="Name:">
@@ -50,7 +49,7 @@
                   <Font size="26.0" />
                </font>
             </Label>
-            <Label fx:id="p_age" layoutX="17.0" layoutY="150.0" text="Age:">
+            <Label layoutX="17.0" layoutY="150.0" text="Age:">
                <font>
                   <Font size="26.0" />
                </font>
@@ -65,35 +64,16 @@
                   <Font size="26.0" />
                </font>
             </Label>
-            <Label layoutX="19.0" layoutY="390.0" text="Gender:">
+            <Label layoutX="17.0" layoutY="330.0" text="Gender:">
                <font>
                   <Font size="26.0" />
                </font>
             </Label>
-            <Button fx:id="p_login" layoutX="279.0" layoutY="457.0" mnemonicParsing="false" onAction="#p_login_setinfo" prefHeight="43.0" prefWidth="104.0" styleClass="button2" stylesheets="@../../../main/java/project/application.css" text="Sign up">
+            <Button fx:id="p_login" layoutX="279.0" layoutY="457.0" mnemonicParsing="false" onAction="#p_home" prefHeight="43.0" prefWidth="104.0" styleClass="button2" stylesheets="@../../eclipse-workspace/HMS/src/application/application.css" text="Sign up">
                <font>
                   <Font name="System Bold" size="23.0" />
                </font>
             </Button>
-            <RadioButton fx:id="male" layoutX="130.0" layoutY="392.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="106.0" selected="true" text="Male">
-               <font>
-                  <Font size="24.0" />
-               </font>
-               <toggleGroup>
-                  <ToggleGroup fx:id="select" />
-               </toggleGroup>
-            </RadioButton>
-            <RadioButton fx:id="female" layoutX="256.0" layoutY="389.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="130.0" text="Female" toggleGroup="$select">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </RadioButton>
-            <PasswordField fx:id="p_pass" layoutX="123.0" layoutY="331.0" prefHeight="47.0" prefWidth="257.0" />
-            <Label layoutX="18.0" layoutY="339.0" prefHeight="39.0" prefWidth="93.0" text="Password:">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
          </children>
       </AnchorPane>
    </children>
