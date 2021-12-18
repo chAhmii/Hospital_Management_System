@@ -1,20 +1,12 @@
-package project;
-
+package application;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.function.ToIntFunction;
 
 public class Patient extends Person {
 	private int personalHealthNumber;
 	private String disease;
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String password;
 	private int roomNum;
 
 	public Patient(int PHN, String D, int R, String n, String g, String a, int ag) {
@@ -23,10 +15,8 @@ public class Patient extends Person {
 		disease = D;
 		roomNum = R;
 	}
-
-	public Patient(){
-		super();
-	}
+	
+	
 	public int getPersonalHealthNumber() {
 		return personalHealthNumber;
 	}
@@ -51,8 +41,12 @@ public class Patient extends Person {
 		this.roomNum = roomNum;
 	}
 
-	public static void createNewAccount(int age, String gender, String address, String disease, String name, String password) throws SQLException {
-		String Max = SQLDbConnection.readMaxPHN();
-	    SQLDbConnection.insertPatient(age, gender, address, disease, name,password);
+	public static int createNewAccount(int age, String gender, String address, String disease, String name, String Password) {
+		int phn= SQLDbConnection.insertPatient(age, gender, address, disease, name, Password);
+		return phn;
 	}
+	
+	
+		
+	
 }
