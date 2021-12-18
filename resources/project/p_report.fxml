@@ -44,7 +44,7 @@
    <left>
       <AnchorPane prefHeight="750.0" prefWidth="216.0" style="-fx-background-color: turquoise;" BorderPane.alignment="CENTER">
          <children>
-            <VBox alignment="TOP_CENTER" layoutY="2.0" prefHeight="530.0" prefWidth="216.0" spacing="25.0">
+            <VBox alignment="TOP_CENTER" layoutY="2.0" prefHeight="630.0" prefWidth="216.0" spacing="25.0">
                <children>
                   <Button mnemonicParsing="false" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@../../eclipse-workspace/HMS/src/application/application.css" text="Home">
                      <font>
@@ -67,6 +67,11 @@
                      </font>
                   </Button>
                   <Button mnemonicParsing="false" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@../../eclipse-workspace/HMS/src/application/application.css" text="Prescription">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@../../eclipse-workspace/HMS/src/application/application.css" text="Bill">
                      <font>
                         <Font name="Arial Bold Italic" size="23.0" />
                      </font>
