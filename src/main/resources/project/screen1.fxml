@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1440.0" layoutX="2.0" layoutY="-21.0" opacity="0.26" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@IMG/background.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="189.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM" wrappingWidth="1230.623046875">
+         <font>
+            <Font name="Britannic Bold" size="78.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="196.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F         A         S         T             -            N         U         C         E         S" wrappingWidth="1072.623046875">
+         <font>
+            <Font name="Times New Roman Italic" size="38.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="-2.0" layoutY="288.0" opacity="0.83" prefHeight="346.0" prefWidth="1440.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="288.0">
+         <children>
+            <Button fx:id="doc_button" contentDisplay="TOP" mnemonicParsing="false" onAction="#d_login" prefHeight="300.0" prefWidth="344.0" style="-fx-background-color: transparent;" stylesheets="@application.css" text="DOCTOR" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="45.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="192.0">
+                     <image>
+                        <Image url="@IMG/doctor.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="patient_button" contentDisplay="TOP" layoutX="354.0" layoutY="10.0" mnemonicParsing="false" onAction="#p_login" prefHeight="300.0" prefWidth="344.0" style="-fx-background-color: transparent;" stylesheets="@application.css" text="PATIENT" textFill="WHITE">
+               <font>
+                  <Font size="45.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="196.0">
+                     <image>
+                        <Image url="@IMG/patient.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="admin_button" contentDisplay="TOP" layoutX="698.0" layoutY="10.0" mnemonicParsing="false" onAction="#a_login" prefHeight="300.0" prefWidth="344.0" style="-fx-background-color: transparent;" stylesheets="@application.css" text="ADMIN" textFill="WHITE">
+               <font>
+                  <Font size="45.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="200.0" fitWidth="173.0" styleClass="button">
+                     <image>
+                        <Image url="@IMG/Admin.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

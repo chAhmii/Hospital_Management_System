@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1440.0" layoutX="2.0" layoutY="-21.0" opacity="0.26" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@IMG/background.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="189.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM" wrappingWidth="1230.623046875">
+         <font>
+            <Font name="Britannic Bold" size="78.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="196.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F         A         S         T             -            N         U         C         E         S" wrappingWidth="1072.623046875">
+         <font>
+            <Font name="Times New Roman Italic" size="38.0" />
+         </font>
+      </Text>
+      <Pane layoutX="-6.0" layoutY="277.0" opacity="0.77" prefHeight="346.0" prefWidth="1446.0" style="-fx-background-color: grey;" styleClass="\@../../../main/java/project/application.css">
+         <children>
+            <Line endX="150.0" layoutX="611.0" layoutY="178.0" rotate="90.0" startX="-150.0" stroke="#6b6868" />
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="137.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nurse">
+         <font>
+            <Font name="Arial Bold Italic" size="38.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="252.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" underline="true">
+         <font>
+            <Font name="Arial Bold Italic" size="73.0" />
+         </font>
+      </Text>
+      <Label layoutX="683.0" layoutY="343.0" text="USER ID" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="685.0" layoutY="461.0" text="PASSWORD" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="n_id" layoutX="934.0" layoutY="331.0" prefHeight="47.0" prefWidth="289.0" />
+      <Button fx:id="n_login" layoutX="1275.0" layoutY="557.0" mnemonicParsing="false" onAction="#Home_screen" styleClass="button2" stylesheets="" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <TextField fx:id="n_password" layoutX="933.0" layoutY="443.0" prefHeight="47.0" prefWidth="289.0" />
+   </children>
+</AnchorPane>

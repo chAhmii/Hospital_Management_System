@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+   <top>
+      <AnchorPane prefHeight="140.0" prefWidth="1440.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="1440.0" opacity="0.29" pickOnBounds="true">
+               <image>
+                  <Image url="@IMG/background.jpeg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="199.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM" wrappingWidth="1230.623046875">
+               <font>
+                  <Font name="Britannic Bold" size="78.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="207.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F         A         S         T             -            N         U         C         E         S" wrappingWidth="1072.623046875">
+               <font>
+                  <Font name="Times New Roman Italic" size="38.0" />
+               </font>
+            </Text>
+            <Button contentDisplay="CENTER" graphicTextGap="0.0" layoutX="28.0" layoutY="42.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="114.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="750.0" prefWidth="216.0" style="-fx-background-color: turquoise;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="2.0" prefHeight="630.0" prefWidth="216.0" spacing="25.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#p_home" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@application.css" text="Home">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#change_Report_Page" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@application.css" text="Report">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="109.0" mnemonicParsing="false" onAction="#Admit_page_Change" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@application.css" text="Admit">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Book_Appointment" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@application.css" text="Book">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Generate_prescription_btn" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@application.css" text="Prescription">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="1196.0" style="-fx-background-color: grey;">
+               <children>
+                  <ImageView fitHeight="911.0" fitWidth="1212.0" layoutX="-12.0" opacity="0.55" pickOnBounds="true">
+                     <image>
+                        <Image url="@IMG/tablets2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="26.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admit" underline="true">
+                     <font>
+                        <Font name="Britannic Bold" size="53.0" />
+                     </font>
+                  </Text>
+                  <Pane layoutX="59.0" layoutY="232.0" opacity="0.77" prefHeight="664.0" prefWidth="1090.0" style="-fx-background-color: white; -fx-background-radius: 40;" />
+                  <TableView fx:id="table_admit" layoutX="680.0" layoutY="343.0" prefHeight="530.0" prefWidth="422.0">
+                    <columns>
+                      <TableColumn fx:id="BBed" prefWidth="159.0" text="Bed ID" />
+                      <TableColumn fx:id="Availabilty" prefWidth="149.0" text="Availability" />
+                    </columns>
+                  </TableView>
+                  <Text layoutX="28.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve a bed , anywhere anytime, so that you may not have to face the the hassle of standing in queues for your loved ones. " wrappingWidth="1120.46826171875">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="678.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Availabilityof all beds">
+                     <font>
+                        <Font name="Bell MT Italic" size="35.0" />
+                     </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="0.19523809523809527" startX="0.14761904761904762">
+                           <stops>
+                              <Stop color="#38614e" />
+                              <Stop color="#376f55" offset="0.007662835249042145" />
+                              <Stop color="#25a814" offset="0.9961685823754789" />
+                              <Stop color="#44ae69" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Text>
+                  <Text layoutX="84.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Form">
+                     <font>
+                        <Font name="Calibri" size="53.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="87.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use the table provided to view the availbility of beds in our wards. Their is no fee for reserving a bed. Please fill out the form below" wrappingWidth="531.53076171875">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="102.0" layoutY="504.0" text="Bed ID">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Admit_Bed_ID" layoutX="278.0" layoutY="502.0" prefHeight="39.0" prefWidth="235.0" promptText="121">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Button layoutX="368.0" layoutY="641.0" mnemonicParsing="false" onAction="#Reserved_Bed" styleClass="button2" stylesheets="@application.css" text="Reserve Bed">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

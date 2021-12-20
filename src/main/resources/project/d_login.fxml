@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1440.0" layoutX="2.0" layoutY="-21.0" opacity="0.26" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@IMG/background.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="189.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM" wrappingWidth="1230.623046875">
+         <font>
+            <Font name="Britannic Bold" size="78.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="196.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F         A         S         T             -            N         U         C         E         S" wrappingWidth="1072.623046875">
+         <font>
+            <Font name="Times New Roman Italic" size="38.0" />
+         </font>
+      </Text>
+      <Pane layoutX="-6.0" layoutY="283.0" opacity="0.77" prefHeight="346.0" prefWidth="1446.0" style="-fx-background-color: grey;">
+         <children>
+            <Line endX="150.0" layoutX="611.0" layoutY="178.0" rotate="90.0" startX="-150.0" stroke="#6b6868" />
+            <Label fx:id="D_LABEL" layoutX="850.0" layoutY="255.0" textFill="#cd0c0c" />
+            <PasswordField fx:id="d_pas" layoutX="938.0" layoutY="160.0" prefHeight="53.0" prefWidth="295.0" promptText="Password" />
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="125.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor">
+         <font>
+            <Font name="Arial Bold Italic" size="38.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="252.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" underline="true">
+         <font>
+            <Font name="Arial Bold Italic" size="73.0" />
+         </font>
+      </Text>
+      <Label layoutX="683.0" layoutY="343.0" text="USER ID" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="685.0" layoutY="461.0" text="PASSWORD" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="d_id" layoutX="934.0" layoutY="331.0" prefHeight="47.0" prefWidth="289.0" promptText="User ID" />
+      <Button fx:id="d_login" layoutX="1275.0" layoutY="557.0" mnemonicParsing="false" onAction="#Doctor_Authority_Login" styleClass="button2" stylesheets="@application.css" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="99.0" layoutY="133.0" mnemonicParsing="false" onAction="#Home_screen">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IMG/back.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
