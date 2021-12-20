@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1440.0" layoutX="2.0" layoutY="-21.0" opacity="0.26" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@IMG/background.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="189.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM" wrappingWidth="1230.623046875">
+         <font>
+            <Font name="Britannic Bold" size="78.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="196.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F         A         S         T             -            N         U         C         E         S" wrappingWidth="1072.623046875">
+         <font>
+            <Font name="Times New Roman Italic" size="38.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="38.0" layoutY="214.0" prefHeight="650.0" prefWidth="1370.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <TableView fx:id="table_Doctor" layoutX="83.0" layoutY="136.0" prefHeight="450.0" prefWidth="480.0">
+              <columns>
+                <TableColumn fx:id="Doctor_Id" prefWidth="195.0" text="ID" />
+                <TableColumn fx:id="Doctor_name" prefWidth="340.0" text="name" />
+              </columns>
+            </TableView>
+            <Text layoutX="43.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Doctor" wrappingWidth="314.388671875">
+               <font>
+                  <Font name="Britannic Bold" size="41.0" />
+               </font>
+            </Text>
+            <Text layoutX="43.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLease Enter the ID of the Doctor to be removed from the provided table." wrappingWidth="815.404296875">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Remove_id" layoutX="798.0" layoutY="180.0" prefHeight="33.0" prefWidth="219.0" promptText="1234" />
+            <Label layoutX="627.0" layoutY="179.0" prefHeight="39.0" prefWidth="157.0" text="Doctor's ID">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="r_button" layoutX="952.0" layoutY="243.0" mnemonicParsing="false" onAction="#Remove_Doctor_Confirmation" text="Remove" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

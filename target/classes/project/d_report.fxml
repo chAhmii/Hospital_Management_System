@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+   <top>
+      <AnchorPane prefHeight="140.0" prefWidth="1440.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="1440.0" opacity="0.29" pickOnBounds="true">
+               <image>
+                  <Image url="@IMG/background.jpeg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="199.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM" wrappingWidth="1230.623046875">
+               <font>
+                  <Font name="Britannic Bold" size="78.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="207.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F         A         S         T             -            N         U         C         E         S" wrappingWidth="1072.623046875">
+               <font>
+                  <Font name="Times New Roman Italic" size="38.0" />
+               </font>
+            </Text>
+            <Button contentDisplay="CENTER" graphicTextGap="0.0" layoutX="28.0" layoutY="42.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="114.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="750.0" prefWidth="216.0" style="-fx-background-color: turquoise;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="2.0" prefHeight="530.0" prefWidth="216.0" spacing="25.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#d_home" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@application.css" text="HOME">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="10.0" mnemonicParsing="false" onAction="#input_report" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@application.css" text="REPORT">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="15.0" layoutY="109.0" mnemonicParsing="false" onAction="#Prescription_page" opacity="0.6" prefHeight="74.0" prefWidth="206.0" style="-fx-background-color: transparent;" styleClass="button3" stylesheets="@application.css" text="PRESCRIBE">
+                     <font>
+                        <Font name="Arial Bold Italic" size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1004.0" prefWidth="1190.0">
+               <children>
+                  <ImageView fitHeight="1018.0" fitWidth="1226.0" layoutX="-12.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@IMG/tablets2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="26.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report" underline="true">
+                     <font>
+                        <Font name="Britannic Bold" size="53.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="32.0" layoutY="302.0" text="Patients PHN:">
+                     <font>
+                        <Font name="Times New Roman Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="P_PHN" layoutX="250.0" layoutY="299.0" prefHeight="39.0" prefWidth="201.0" promptText="e.g 1234">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <GridPane gridLinesVisible="true" layoutX="49.0" layoutY="415.0" prefHeight="362.0" prefWidth="458.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="196.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="264.0" minWidth="10.0" prefWidth="264.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text fx:id="Report_name" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+                           <font>
+                              <Font name="Algerian" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Algerian" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Algerian" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Age:" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Algerian" size="36.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Disease:" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Algerian" size="36.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="r_name_label" prefHeight="46.0" prefWidth="220.0" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Calibri Italic" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="r_disease_name" prefWidth="226.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Calibri Italic" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="r_address_label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Calibri Italic" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="r_age_label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Calibri Italic" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="r_gender_label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Calibri Italic" size="40.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="d_login" layoutX="520.0" layoutY="297.0" mnemonicParsing="false" onAction="#input_report" prefHeight="43.0" prefWidth="202.0" styleClass="button2" stylesheets="@application.css" text="Generate Report">
+                     <font>
+                        <Font name="System Bold" size="23.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="29.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can Generate Reports for any patient in the database. Just enter the Personnel Health Number or the PHN  of any patient in the given field and press the &quot;Generate Report&quot; Button&quot;. " wrappingWidth="1054.46826171875">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

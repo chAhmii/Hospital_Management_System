@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1440.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Controller">
+    <children>
+        <ImageView fitHeight="900.0" fitWidth="1440.0" layoutX="2.0" layoutY="-21.0" opacity="0.26" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@IMG/background.jpeg" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="189.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSPITAL MANAGEMENT SYSTEM" wrappingWidth="1230.623046875">
+            <font>
+                <Font name="Britannic Bold" size="78.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="196.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F         A         S         T             -            N         U         C         E         S" wrappingWidth="1072.623046875">
+            <font>
+                <Font name="Times New Roman Italic" size="38.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutX="139.0" layoutY="234.0" prefHeight="558.0" prefWidth="1154.0" style="-fx-background-color: lightgrey; -fx-background-radius: 30;">
+            <children>
+                <Text layoutX="458.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMINISTRATOR">
+                    <font>
+                        <Font name="Arial Bold" size="34.0" />
+                    </font>
+                </Text>
+                <Button alignment="CENTER" contentDisplay="CENTER" layoutX="144.0" layoutY="185.0" mnemonicParsing="false" onAction="#Doctor_Adding" prefHeight="39.0" prefWidth="254.0" text="Add Doctor" textFill="#140301">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Button>
+                <Button layoutX="144.0" layoutY="295.0" mnemonicParsing="false" onAction="#remove_doctor" prefHeight="58.0" prefWidth="253.0" text="Remove Doctor" textFill="#400606">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Button>
+                <Label fx:id="prompt_label" layoutX="177.0" layoutY="88.0" />
+                <Button layoutX="753.0" layoutY="185.0" mnemonicParsing="false" onAction="#Add_Bed" prefHeight="58.0" prefWidth="253.0" text="Add Bed" textFill="#400606">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Button>
+            <Button fx:id="remove_btn" layoutX="752.0" layoutY="295.0" mnemonicParsing="false" onAction="#Remove_Bed" prefHeight="58.0" prefWidth="253.0" text="Remove Bed" textFill="#400606">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Line endX="-59.0" endY="-169.0" layoutX="642.0" layoutY="281.0" opacity="0.51" startX="-59.0" startY="127.0" strokeWidth="5.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.19651153683662415" green="0.11945662647485733" blue="0.6973684430122375" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.39011940360069275" green="0.05628655105829239" blue="0.43421053886413574" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <Text layoutX="144.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doctor">
+               <font>
+                  <Font name="Arial Bold" size="34.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1242000013589859" green="0.23817409574985504" blue="0.6899999976158142" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.1242000013589859" green="0.23817409574985504" blue="0.6899999976158142" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9961685823754789">
+                           <color>
+                              <Color red="0.5290448069572449" green="0.033625729382038116" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5290448069572449" green="0.033625729382038116" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text layoutX="759.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beds">
+               <font>
+                  <Font name="Arial Bold" size="34.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.1242000013589859" green="0.23817409574985504" blue="0.6899999976158142" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.1242000013589859" green="0.23817409574985504" blue="0.6899999976158142" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9961685823754789">
+                           <color>
+                              <Color red="0.5290448069572449" green="0.033625729382038116" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5290448069572449" green="0.033625729382038116" blue="0.6052631735801697" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Label fx:id="add_bed" layoutX="569.0" layoutY="476.0" />
+            <Button layoutX="525.0" layoutY="498.0" mnemonicParsing="false" onAction="#a_login" prefHeight="25.0" prefWidth="102.0" text="Logout" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
